@@ -1,0 +1,16 @@
+export { cloneHandler } from './lib/handlers/clone.handler';
+export { Events } from './lib/handlers/events.class';
+export { openFolderHandler } from './lib/handlers/open-folder.handler';
+export { searchHandler } from './lib/handlers/search.handler';
+export { execPromise } from './lib/exec-promise';
+export { AngularGenerator } from '@onivoro/server-vscode';
+export { ManifestManager } from './lib/manifest-manager';
+export { IFileSearchResult as FileSearchResult } from './lib/models/file-search-result';
+export { IHandler } from './lib/models/handler';
+export { IRepoRefMap as RepoRefMap } from './lib/models/repo-ref-map';
+export { IRepoSearchResult as RepoSearchResult } from './lib/models/repo-search-result';
+export { PathManager } from './lib/path-manager';
+export { RepoManager } from './lib/repo-manager';
+export { ResultTransformer } from './lib/result-transformer';
+export { IOniExtensionApp } from '@onivoro/server-vscode';
+export { App } from './lib/app';

@@ -1,0 +1,7 @@
+{
+  "name": "@onivoro/server-app-vscx",
+  "version": "0.0.29",
+  "dependencies": {
+    "@onivoro/server-vscode": "latest"
+  }
+}
