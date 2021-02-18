@@ -2,7 +2,6 @@ export { cloneHandler } from './lib/handlers/clone.handler';
 export { Events } from './lib/handlers/events.class';
 export { openFolderHandler } from './lib/handlers/open-folder.handler';
 export { searchHandler } from './lib/handlers/search.handler';
-export { execPromise } from './lib/exec-promise';
 export { AngularGenerator } from '@onivoro/server-vscode';
 export { ManifestManager } from './lib/manifest-manager';
 export { IFileSearchResult as FileSearchResult } from './lib/models/file-search-result';

@@ -1,7 +1,7 @@
 import { execSync } from 'child_process';
-import { writeFile } from 'fs';
+import { writeFileRx } from '@onivoro/server-disk';
+import { execPromise } from '@onivoro/server-process';
 import { parse } from 'path';
-import { execPromise } from './exec-promise';
 import { PathManager } from './path-manager';
 
 export class ManifestManager {
@@ -17,15 +17,7 @@ export class ManifestManager {
     async saveManifest(manifestContent: string) {
         const fullPath = await this.getManifestPath();
 
-        return new Promise((resolve, reject) => {
-            writeFile(fullPath, manifestContent, { encoding: 'utf8' }, (e) => {
-                if (e) {
-                    reject(e);
-                } else {
-                    resolve();
-                }
-            });
-        });
+        return writeFileRx(fullPath, manifestContent).toPromise();
     }
 
     async getRepoList(): Promise<string[]> {

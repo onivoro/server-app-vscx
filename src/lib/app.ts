@@ -5,7 +5,7 @@ export class App implements IOniExtensionApp {
     assetPaths: string[] = ['soundcheck', 'dist', 'soundcheck'];
     registeredCommand = 'extension.helloWorld';
     title = 'Git-Grok';
-    viewType?= 'git-grok';\];
+    viewType?= 'git-grok';
     deactivate: () => void = () => { };
     messageBus = (message, vscode) => {
 
