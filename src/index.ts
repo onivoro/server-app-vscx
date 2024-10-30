@@ -5,6 +5,3 @@ export * from './lib/functions/stamps';
 
 export * from './lib/interfaces/action.interface';
 
-export { ServerAppVscxModule } from './lib/modules/server-app-vscx.module';
-
-export { ServerAppVscxService } from './lib/services/server-app-vscx.service';

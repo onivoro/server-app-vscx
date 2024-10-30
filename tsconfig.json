@@ -1,9 +1,6 @@
 {
-  "extends": "./tsconfig.base.json",
+  "extends": "./node_modules/@onivoro/cli/src/assets/tsconfig.22.json",
   "compilerOptions": {
-    "module": "commonjs",
-    "outDir": "dist",
-    "declaration": true,
     "rootDir": "src",
     "types": ["node", "jest"]
   },
